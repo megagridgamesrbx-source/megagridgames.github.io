@@ -1,39 +1,275 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MegaGridGames — Connect Roblox</title>
-<style>
-:root{--bg:#0b0e14;--panel:#131923;--text:#f5f7fb;--muted:#a8b2c3;--accent:#63e6be;--line:#2b3545}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(ellipse at 50% -15%,rgba(99,230,190,.16),transparent 48%),var(--bg);display:grid;place-items:center;padding:24px}
-.shell{width:min(100%,980px)}header{display:flex;align-items:center;gap:12px;margin-bottom:34px}.mark{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--accent);color:#07110e;font-weight:900;letter-spacing:-2px}.brand{font-weight:800}.brand small{display:block;color:var(--muted);font-weight:500;margin-top:2px}
-.layout{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}.intro,.card{border:1px solid var(--line);border-radius:22px;background:rgba(19,25,35,.9);padding:clamp(24px,4vw,40px)}
-.eyebrow{display:inline-flex;color:var(--accent);background:#142f2a;border:1px solid #31594e;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:750;letter-spacing:.6px;text-transform:uppercase}
-h1{font-size:clamp(32px,5vw,48px);line-height:1.06;letter-spacing:-1.8px;margin:22px 0 16px}p{color:var(--muted);line-height:1.65;margin:0}.features{display:grid;gap:14px;margin-top:28px}.feature{display:flex;gap:12px;align-items:flex-start}.tick{flex:0 0 26px;height:26px;display:grid;place-items:center;border-radius:8px;color:var(--accent);background:#142f2a;font-weight:900}.feature strong{display:block;font-size:14px;margin:1px 0 3px}.feature span{display:block;color:var(--muted);font-size:13px;line-height:1.5}
-.card{display:flex;flex-direction:column;justify-content:center}.card h2{margin:0 0 8px;font-size:23px}.sub{font-size:14px;margin-bottom:26px}.roblox-btn{width:100%;display:flex;justify-content:center;align-items:center;gap:11px;padding:15px 18px;border:0;border-radius:12px;cursor:pointer;background:#f5f7fb;color:#10141b;font-weight:800;font-size:15px}.roblox-btn:hover{background:#dfe6ee}.roblox-mark{width:19px;height:19px;display:inline-grid;place-items:center;background:#10141b;transform:rotate(12deg)}.roblox-mark:after{content:"";width:6px;height:6px;background:#f5f7fb}.notice{margin-top:14px;border:1px solid var(--line);background:#0e131c;border-radius:10px;padding:12px;color:var(--muted);font-size:12px;line-height:1.55}.status{margin-top:16px;font-size:13px;color:var(--accent);min-height:20px}.divider{display:flex;align-items:center;gap:12px;color:#6f7b8d;font-size:11px;margin:22px 0}.divider:before,.divider:after{content:"";height:1px;background:var(--line);flex:1}.footer{text-align:center;color:#6f7b8d;font-size:12px;margin-top:22px}.footer a{color:var(--muted);text-decoration:none}
-@media(max-width:720px){.layout{grid-template-columns:1fr}header{margin-bottom:22px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MegaGridGames | Community Account Link</title>
+  <meta name="description" content="The MegaGridGames community account-linking portal.">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 48px 24px;
+      background:
+        radial-gradient(ellipse at 50% 0%, #102b27 0%, #0b1016 48%);
+      color: #f5f7fb;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #55e2b9;
+      color: #07120f;
+      font-weight: 900;
+    }
+
+    .brand { font-weight: 800; }
+    .subtitle { color: #aabbd3; font-size: 13px; }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .panel {
+      padding: 40px;
+      background: #131a23;
+      border: 1px solid #2b3748;
+      border-radius: 24px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid #285e50;
+      border-radius: 30px;
+      background: #15332d;
+      color: #55e2b9;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 24px 0 16px;
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+    }
+
+    h2 {
+      margin-top: 12px;
+      font-size: 23px;
+    }
+
+    p { color: #b8c9e2; }
+
+    .features {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .check {
+      display: grid;
+      place-items: center;
+      min-width: 25px;
+      height: 25px;
+      border-radius: 7px;
+      background: #17352f;
+      color: #55e2b9;
+      font-weight: bold;
+    }
+
+    .feature strong { display: block; }
+    .feature small { color: #b8c9e2; }
+
+    .connect {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      margin: 24px 0 12px;
+      padding: 17px;
+      border: 0;
+      border-radius: 12px;
+      background: #f4f6fb;
+      color: #10151d;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .connect:hover { background: #dfe7f1; }
+
+    .notice {
+      color: #55e2b9;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0;
+      color: #8797ad;
+      font-size: 10px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #2b3748;
+    }
+
+    .info {
+      padding: 14px;
+      border: 1px solid #2b3748;
+      border-radius: 11px;
+      color: #b8c9e2;
+      font-size: 12px;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      color: #8797ad;
+      font-size: 12px;
+    }
+
+    footer a {
+      color: #dbe5f5;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 760px) {
+      body { padding: 28px 16px; }
+      main { grid-template-columns: 1fr; }
+      .panel { padding: 26px; }
+    }
+  </style>
 </head>
-<body><main class="shell">
-<header><div class="mark">MG</div><div class="brand">MegaGridGames<small>Community Account Link</small></div></header>
-<section class="layout">
-<div class="intro"><div class="eyebrow">◆ Official community portal</div><h1>Connect your<br>Roblox account.</h1>
-<p>Link your Roblox profile to the MegaGridGames community. This is a starter design; secure Roblox authorisation will be connected in the next setup step.</p>
-<div class="features">
-<div class="feature"><div class="tick">✓</div><div><strong>Roblox-authorised sign-in</strong><span>When enabled, Roblox handles sign-in and consent.</span></div></div>
-<div class="feature"><div class="tick">✓</div><div><strong>Your account stays yours</strong><span>Never enter your Roblox password on a third-party page.</span></div></div>
-<div class="feature"><div class="tick">✓</div><div><strong>Made for MegaGridGames</strong><span>One community hub for our Roblox games and players.</span></div></div>
-</div></div>
-<div class="card"><h2>Link Roblox</h2><p class="sub">Continue securely to Roblox to approve the connection.</p>
-<button class="roblox-btn" id="connect"><span class="roblox-mark" aria-hidden="true"></span>Connect with Roblox</button>
-<div class="status" id="status" role="status" aria-live="polite"></div><div class="divider">SECURITY FIRST</div>
-<p style="font-size:13px">You'll be sent to Roblox's official website for sign-in and permissions once OAuth is configured.</p>
-<div class="notice">Preview mode: this button does not sign anyone in yet. We'll connect it to Roblox's official OAuth flow after registering your application.</div></div>
-</section>
-<div class="footer">© <span id="year"></span> MegaGridGames · <a href="#" onclick="alert('Add your privacy policy URL here when publishing.');return false;">Privacy</a> · <a href="#" onclick="alert('Add your terms URL here when publishing.');return false;">Terms</a></div>
-</main>
-<script>
-document.getElementById("year").textContent=new Date().getFullYear();
-document.getElementById("connect").addEventListener("click",()=>{document.getElementById("status").textContent="Preview only — official Roblox OAuth still needs to be configured.";});
-</script></body></html>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">MG</div>
+      <div>
+        <div class="brand">MegaGridGames</div>
+        <div class="subtitle">Community Account Link</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel">
+        <span class="tag">◆ OFFICIAL COMMUNITY PORTAL</span>
+
+        <h1>Connect your<br>Roblox account.</h1>
+
+        <p>
+          Link your Roblox profile to the MegaGridGames
+          community. This is a starter design; secure Roblox
+          authorisation will be connected in a future setup step.
+        </p>
+
+        <div class="features">
+          <div class="feature">
+            <span class="check">✓</span>
+            <div>
+              <strong>Roblox-authorised sign-in</strong>
+              <small>When enabled, Roblox handles sign-in and consent.</small>
+            </div>
+          </div>
+
+          <div class="feature">
+            <span class="check">✓</span>
+            <div>
+              <strong>Your account stays yours</strong>
+              <small>Never enter your Roblox password on a third-party page.</small>
+            </div>
+          </div>
+
+          <div class="feature">
+            <span class="check">✓</span>
+            <div>
+              <strong>Made for MegaGridGames</strong>
+              <small>One community hub for our Roblox games and players.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Link Roblox</h2>
+        <p>Continue securely to Roblox to approve the connection.</p>
+
+        <button class="connect" id="connectButton" type="button">
+          <span aria-hidden="true">◩</span>
+          Connect with Roblox
+        </button>
+
+        <div class="notice">
+          Preview only — official Roblox OAuth still needs to be configured.
+        </div>
+
+        <div class="divider">SECURITY FIRST</div>
+
+        <p>
+          You'll be sent to Roblox's official website for sign-in
+          and permissions once OAuth is configured.
+        </p>
+
+        <div class="info">
+          Preview mode: this button does not sign anyone in yet.
+          It will only connect to Roblox after the OAuth flow
+          has been properly configured.
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 MegaGridGames ·
+      <a href="https://megagridgamesrbx-source.github.io/megagridgames.github.io/privacy.html">Privacy</a>
+      ·
+      <a href="https://megagridgamesrbx-source.github.io/megagridgames.github.io/terms.html">Terms</a>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("connectButton").addEventListener("click", function () {
+      alert("Roblox account linking is not enabled yet. Please check back later.");
+    });
+  </script>
+</body>
+</html>
